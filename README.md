@@ -13,39 +13,39 @@ Exercícios em Linguagem de Programação JavaScript
 <img src="img1.png" width="350" height="150">
 
 ***
-##### Operadores Aritiméticos:
+#### Operadores Aritiméticos:
 (+) Soma<p>
 (-) Subtração<p>
 (*) Multiplicação<p>
 (/) Divisão Real<p>
 (%) Divisão Inteira<p>
-(**) Potência
+(**) Potência<p>
 
-<img src="img1.2.png" width="350" height="150">
+<img src="img1.2.png" width="350" height="400">
 
 
-##### Operadores Relacionais:
+#### Operadores Relacionais:
 (>) Maior..<p>
 (<) Menor..<p>
 (==) Igual (valores iguais)..<p>
 (!=) Diferente..<p>
 (>=) Maior ou Igual..<p>
 (<=) Menor ou Igual..<p>
-(===) Identidade (tipos iguais)..
+(===) Identidade (tipos iguais)..<p>
 
-<img src="img1.3.png" width="350" height="150">
+<img src="img1.3.png" width="350" height="400">
 
 
-##### Operadores Lógicos:
+#### Operadores Lógicos:
 (&&) Conjunção, situação só é verdadeira se, somente se, as duas proposições forem verdadeiras.<p>
 ( || ) Disjunção, situação só é verdadeira se, somente se, pelo menos UMA proposição for verdadeira.<p>
-( ! ) Negação, nega o resultado apresentado.
+( ! ) Negação, nega o resultado apresentado.<p>
 
-<img src="img1.3.png" width="350" height="150">
+<img src="img1.3.png" width="350" height="400">
 
 
 ***
-##### Exemplos de Métodos: 
+#### Exemplos de Métodos: 
 ~~~javascript
 <script>
         toString() // Converter dado para string
@@ -61,7 +61,7 @@ Exercícios em Linguagem de Programação JavaScript
 ~~~
 
 ***
-##### Exercícios:
+#### Exercícios:
 ~~~javascript
 <script> 
         //Recebe ano e informa a qual século ele pertence.
