@@ -9,11 +9,59 @@ Exercícios em Linguagem de Programação JavaScript
     </script>
 ~~~
 
-### Saída
+##### Saída
 <img src="img1.png" width="350" height="150">
 
 ***
+##### Operadores Aritiméticos:
+(+) Soma<p>
+(-) Subtração<p>
+(*) Multiplicação<p>
+(/) Divisão Real<p>
+(%) Divisão Inteira<p>
+(**) Potência
 
+<img src="img1.2.png" width="350" height="150">
+
+
+##### Operadores Relacionais:
+(>) Maior..<p>
+(<) Menor..<p>
+(==) Igual (valores iguais)..<p>
+(!=) Diferente..<p>
+(>=) Maior ou Igual..<p>
+(<=) Menor ou Igual..<p>
+(===) Identidade (tipos iguais)..
+
+<img src="img1.3.png" width="350" height="150">
+
+
+##### Operadores Lógicos:
+(&&) Conjunção, situação só é verdadeira se, somente se, as duas proposições forem verdadeiras.<p>
+( || ) Disjunção, situação só é verdadeira se, somente se, pelo menos UMA proposição for verdadeira.<p>
+( ! ) Negação, nega o resultado apresentado.
+
+<img src="img1.3.png" width="350" height="150">
+
+
+***
+##### Exemplos de Métodos: 
+~~~javascript
+<script>
+        toString() // Converter dado para string
+        Number.parseInt() // Converte dado para inteiro
+        Number.parseFloat() // Converte dado para ponto flutuante
+        .length() // Conta caracteres
+        .toUpperCase() // Converter para MAIÚSCULO 
+        .toLowerCase() // Converter para minúsculo
+        .toFixed(2) // Adicionar 2 casas decimais
+        .toFixed().replace('.',',') // Troca ponto por virgula
+        .toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) // Exibe valor em monetário
+</script>
+~~~
+
+***
+##### Exercícios:
 ~~~javascript
 <script> 
         //Recebe ano e informa a qual século ele pertence.
@@ -64,7 +112,7 @@ Exercícios em Linguagem de Programação JavaScript
     </script>
 ~~~
 
-### Saída
+##### Saída
 <img src="img3.png" width="350" height="150">
 <img src="img4.png" width="350" height="150">
 
