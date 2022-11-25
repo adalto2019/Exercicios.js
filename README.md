@@ -76,7 +76,7 @@ javaScript deve exibir uma janela de alerta exibindo seu nome.-->
 ~~~
 
 ##### Saída
-<img src="img2.2.png" width="350" height="400">
+<img src="img2.2.png" width="350" height="200">
 
 ***
 ~~~javascript
@@ -147,7 +147,7 @@ javaScript deve exibir uma janela de alerta exibindo seu nome.-->
 ~~~ 
 
 ~~~css
-<style>/*Css do código*/
+<style>/*Css Interno do Código*/
         body{background-color: rgb(124, 129, 124);
             text-align: center;
             color: aliceblue;
@@ -167,7 +167,7 @@ javaScript deve exibir uma janela de alerta exibindo seu nome.-->
 ~~~
 
 ##### Saída
-<img src="img.2.3.png" width="350" height="400">
+<img src="Calculadora.png" width="350" height="400">
 
 ***
 ~~~javascript
