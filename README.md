@@ -76,8 +76,6 @@ javaScript deve exibir uma janela de alerta exibindo seu nome.-->
 ~~~
 
 ##### Saída
-<img src="img2.png" width="350" height="400">
-<img src="img2.1.png" width="350" height="400">
 <img src="img2.2.png" width="350" height="400">
 
 ***
@@ -169,7 +167,7 @@ javaScript deve exibir uma janela de alerta exibindo seu nome.-->
 ~~~
 
 ##### Saída
-<img src="img2.3.png" width="350" height="400">
+<img src="img.2.3.png" width="350" height="400">
 
 ***
 ~~~javascript
