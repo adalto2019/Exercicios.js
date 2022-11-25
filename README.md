@@ -61,7 +61,117 @@ Exercícios em Linguagem de Programação JavaScript
 ~~~
 
 ***
-#### Exercícios:
+#### Exercícios [3]:
+~~~javascript
+<!--Crie uma pequena página em HTML que exiba um botão. Quando este botão for clicado, um comando
+javaScript deve exibir uma janela de alerta exibindo seu nome.-->
+<body>
+    <input type="button" value="CliqueAqui" id="btn" onclick="clicar()">
+    <script>
+       function clicar(){
+        window.alert("Olá Adalto Jr!")
+       }
+    </script>
+</body>
+~~~
+
+##### Saída
+<img src="img2.png" width="350" height="400">
+<img src="img2.1.png" width="350" height="400">
+<img src="img2.2.png" width="350" height="400">
+
+***
+~~~javascript
+<!--Criando uma Calculadora OnLine-->
+<body>
+    <form>
+        <h2>Calculadora Online</h2>
+        <h4>Digite um valor (numerador):</h4>
+        <input type="number" name="n1" id="n1"><br>
+        <h4>Digite outro valor (divisor):</h4>
+        <input type="number" name="n2" id="n2">
+        
+        <h4>Escolha o operação a ser realizada:</h4>
+        <input type="button" id="btn" value="Somar" onclick="somar()"> <!--Chama a função ao clicar-->
+        <input type="button" id="btn" value="Subtrair" onclick="subtração()"> 
+        <input type="button" id="btn" value="Multiplicar" onclick="multiplicação()"> 
+        <input type="button" id="btn" value="Dividir" onclick="divisão()"> 
+        <p>! Para calcular raiz ou potêcia só digite o primeiro valor (numerador)</p>
+        <input type="button" id="btn" value="Raiz" onclick="raiz()"> 
+        <input type="button" id="btn" value="Potência" onclick="potencia()"> 
+        <p></p>
+        <div id="resultado">Resultado..</div>
+        <p></p>
+        <input type="reset" value="Resetar"> 
+    </form>
+   <script>
+        var tn1 = (window.document.getElementById("n1")) //Atribui ID a variavél 'tn1'
+        var tn2 = (window.document.getElementById("n2"))
+        var res = window.document.getElementById("res")
+            
+        function somar(){
+            var n1 = Number(tn1.value) //Atribui o valor da varivel 'tn1' em conversão numerica para uma nova variavél 'n1'
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            resultado.innerHTML = `A Soma de ${n1} e ${n2} é: ${s}` 
+        } 
+        function subtração(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 - n2
+            resultado.innerHTML = `A Subtração de ${n1} e ${n2} é: ${s}`
+        }
+        function multiplicação(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 * n2
+            resultado.innerHTML = `A Multiplicação de ${n1} e ${n2} é: ${s}`
+        }
+        function divisão(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 / n2
+            resultado.innerHTML = `A Divisão de ${n1} e ${n2} é: ${s}`
+        }
+        function raiz(){
+            var n1 = Number(tn1.value)
+            var s = Math.sqrt(n1)
+            resultado.innerHTML = `A Raiz Quadrada de ${n1} é: ${s}`
+        }
+        function potencia(){
+            var n1 = Number(tn1.value)
+            var s = n1 ** n1
+            resultado.innerHTML = `A Potência de ${n1} é: ${s}`
+        }
+   </script>
+<br>
+</body>
+~~~ 
+
+~~~css
+<style>/*Css do código*/
+        body{background-color: rgb(124, 129, 124);
+            text-align: center;
+            color: aliceblue;
+            }
+        h2{font-size: 50px;
+            }
+        #btn:hover{font-size: 20px;
+            border-radius: 10px;
+            color: brown;
+            transition: 0.5s;
+            opacity: 0.7;
+            background-color: yellow;
+            }
+        #resultado{font-size: 30px;
+        }        
+</style>
+~~~
+
+##### Saída
+<img src="img2.3.png" width="350" height="400">
+
+***
 ~~~javascript
 <script> 
         //Recebe ano e informa a qual século ele pertence.
