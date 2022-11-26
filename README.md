@@ -61,7 +61,7 @@ Exercícios em Linguagem de Programação JavaScript
 ~~~
 
 ***
-#### Exercícios [3]:
+#### Exercícios [6]:
 ~~~javascript
 <!--Crie uma pequena página em HTML que exiba um botão. Quando este botão for clicado, um comando
 javaScript deve exibir uma janela de alerta exibindo seu nome.-->
@@ -77,6 +77,94 @@ javaScript deve exibir uma janela de alerta exibindo seu nome.-->
 
 ##### Saída
 <img src="img2.2.png" width="350" height="200">
+
+***
+~~~javascript
+<body>
+<!--Crie uma página que solicite ao usuário que ele informe um número.
+Se este número for maior que 10, exiba a frase “O número é grande”, 
+do contrário, exiba “O número é pequeno”.-->
+    <div style="margin-top: 150px; font-size: 30px; text-align: center;">
+        <p>Digite um numero</p>
+        <input type="number" name="n" id="n"><br> 
+        <input type="button" name="btn" value="Clique" id="btn" onclick="clique()">
+        <p></p>
+        <div id="res">Veja a mensagem..</div>
+    </div>
+    <script>
+     var n = document.getElementById("n")
+        function clique(){
+            var num = (n.value)
+            if (num > 10){
+                res.innerText = "O numero é GRANDE!"
+            }
+            else{
+                res.innerText = "O numero é PEQUENO!"
+            }
+        }
+    </script>
+</body>
+~~~
+***
+~~~javascript
+<body>
+<!--Crie uma página que solicite ao usuário que ele escreva uma string; armazene em uma
+variável chamada “texto”.
+– Se a frase tiver entre 1 e 10 caracteres, a página deve exibir a frase “O texto é pequeno”.
+– Se a frase tiver entre 11 e 20 caracteres, a página deve exibir a frase “O texto é médio”.
+– Se a frase tiver entre 21 e 30 caracteres, a página deve exibir a frase “O texto é grande”.
+– Para qualquer outo tamanho de frase, a página deve exibir a frase “Não vou contar o tamanho da
+frase”.-->
+<form style="text-align:center; margin-top: 200px">
+    <input type="text" id="txt">
+    <input type="button" value="Botão" onclick="conta()">
+    <div id="msn" style="margin-top:20px">Mensagem..</div>
+</form>    
+    <script>
+        var texto = document.getElementById("txt")
+        function conta(){
+            var text1 = String(texto.value)
+            //text1.length - Método conta numero de caracteres
+            if (text1.length <= 10){
+                msn.innerText = "O texto é pequeno"
+            }
+            else if(text1.length >= 11 && text1.length <= 20){
+                msn.innerText = "O texto é medio"
+            }
+            else if(text1.length >= 21 && text1.length <= 30){
+                msn.innerText = "O texto é medio"
+            }
+            else{
+                msn.innerText = "Não vou contar o tamanho da frase"
+            }
+        }
+    </script>
+</body
+~~~
+***
+~~~javascript
+<script>
+    //Escreva uma função em Javascript que receba como parâmetro de entrada um array
+    //contendo um conjunto de N números inteiros, e retorne como resposta o menor valor
+    //do array e a soma de todos os valores do array.--> 
+        var n = Number(window.prompt("Digite um numero inteiro"))
+        var array = []//array vazio
+        array.push(n)//adicionando o valor mencionado pelo usuário no array
+        var x = window.prompt("Que adicionar outro numero? s/n")
+        while (x == 's'){//laço while incrementa valores inteiros até o usuário mencionar não
+            var n = Number(window.prompt("Digite um numero inteiro"))    
+            array.push(n)
+            var x = window.prompt("Que adicionar outro numero? s/n")    
+        }
+        var soma = 0
+        var mininmo = Math.min(...array)//método para retornar o menor numero informado
+        for (var i = 0; i < array.length; i++){
+            soma += array[i]
+        }
+        window.alert('Os valores inteiros adicionados no array foram: '+ array)
+        window.alert('Valor mínimo é: '+ mininmo +'. Os valores somados totaliza: ' + soma);    
+</script>
+~~~
 
 ***
 ~~~javascript
