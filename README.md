@@ -61,7 +61,7 @@ Exercícios em Linguagem de Programação JavaScript
 ~~~
 
 ***
-#### Exercícios [6]:
+#### Exercícios [8]:
 ~~~javascript
 <!--Crie uma pequena página em HTML que exiba um botão. Quando este botão for clicado, um comando
 javaScript deve exibir uma janela de alerta exibindo seu nome.-->
@@ -313,13 +313,42 @@ frase”.-->
 <img src="img4.png" width="350" height="150">
 
 ***
+~~~javascript
+<script>
+        //Faça um programa que entre com o nome e o salário de um funcionário e 
+        //mostre seu novo salário, sabendo que o mesmo teve um aumento de 10%.
+        var nome = window.prompt("Digite o seu nome: ")
+        var salario = Number(window.prompt("Informe o seu salario: "))
+        var novoSal = (salario*0.10)+salario
+        window.alert("Olá " + nome + ", o seu salário acrescido de 10% passa a ser: R$" + novoSal)
+</script>
 ~~~
 
-~~~
+***
 
-
-~~~
-
+~~~javascript
+<script>
+    //Nesta prova você deve criar um jogo de adivinhação em javascript.O jogo deve ter os seguintes requerimentos:
+    //1- O computador deve sortear um número entre 1 e 10
+    //2- Deve ser aberto um prompt de comando onde é solicitado que o usuário digite um número entre 1 e 10
+    //3- O usuário tem 3 tentativas para acertar o número, caso erre deve ser mostrado pelo alerta quantas tentativas ele possui
+    //4-Caso o usuário não acerte deve mostrar no alerta a frase “Você perdeu o número era X” onde X é o número sorteado.
+    //5-Caso o usuário acerte deve mostrar no alerta a frase “Acertou parabéns” e parar a execução
+    
+    for (var i = 2; i >= 0; i--) {//Laçode repetição: enquanto 'i'  maior que '0', decrementa um.(repete 3x) 
+        var U = window.prompt("Escolha um numero de 1 a 10.")//Pede valor ao usuário.
+        var M = Math.floor((Math.random()*10) + 1)//Método para sortear números de 1 a 10.
+        window.alert("A Máquina Sorteou o N°: " + M)//Exibe essa mensagem.
+        //Condicional, se verdadeira para com o 'Break', se não continua até finalizar o laço.
+        if (U == M){
+            window.alert("ACERTOU PARABÉNS!!")
+            break
+        }
+        else{
+            window.alert(`Você Perdeu o Número era ${M}. Você tem ${i} Tentativas.`)
+        }
+     }    
+    </script>
 ~~~
 
 
