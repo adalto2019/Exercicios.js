@@ -70,7 +70,7 @@ Exercícios em Linguagem de Programação JavaScript
 ~~~
       
 ***
-#### Exercícios [06]:
+#### Exercícios [07]:
 
 ***
 ~~~javascript
@@ -262,6 +262,23 @@ frase”.-->
         }
      }    
     </script>
+~~~
+~~~javascript
+//Crie uma função em JavaScript que receba como parâmetro um objeto JSON contendo as informações de um livro
+//como título, autor e número de páginas. A função deve imprimir no console as informações do livro em
+//uma mensagem formatada. 
+
+function JSON(){ //função de nome JSON
+    let Objson = {"titulo": "A Metamorfose",
+    "autor": "Franz Kafka",
+    "paginas": 100
+}  
+return Objson   
+}    
+//Msg formatada..
+console.log(`Nome do livro: ${JSON().titulo}, de autoria: ${JSON().autor}. Total de Páginas do livro: ${JSON().paginas} páginas.`)
+//Outra opção de formatação de exibição..
+//console.log("Nome do livro: "+JSON().titulo+", do autor: "+JSON().autor+". Total de páginas: "+JSON().paginas+'x Pgs.')      
 ~~~
 
 
